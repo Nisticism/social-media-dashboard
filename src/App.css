@@ -1,0 +1,254 @@
+* {
+  font-family: "Inter";
+}
+
+:root {
+  --font-color: hsl(228, 34%, 66%);
+  --font-color-secondary: hsl(0, 0%, 100%);
+  --background-color: hsl(230, 17%, 14%);
+  --background-color-secondary: hsl(232, 19%, 15%);
+  --background-image: linear-gradient(
+    var(--background-color-secondary),
+    var(--background-color-secondary)
+  );
+  --background-repeat: no-repeat;
+  --background-position: 0 450px, 0 0;
+  --card-background: hsl(228, 28%, 20%);
+  --card-hover: hsl(228, 32%, 24%);
+  --font-color-tertiary: hsl(0, 0%, 100%);
+  --link-color: cornflowerblue;
+  --link-hover-color: hsl(219, 88%, 66%);
+  --link-hover-color: hsl(219, 100%, 80%);
+}
+
+[theme="dark"] {
+  --font-color: hsl(228, 34%, 66%);
+  --font-color-secondary: hsl(0, 0%, 100%);
+  --background-color: hsl(230, 17%, 14%);
+  --background-color-secondary: hsl(232, 19%, 15%);
+  --background-image: linear-gradient(
+    var(--background-color),
+    var(--background-color)
+  );
+  --background-repeat: no-repeat;
+  --background-position: 0 450px, 0 0;
+  --card-background: hsl(228, 28%, 20%);
+  --card-hover: hsl(228, 32%, 24%);
+  --font-color-tertiary: hsl(0, 0%, 100%);
+  --link-color: cornflowerblue;
+  --link-hover-color: hsl(219, 100%, 80%);
+}
+
+[theme="light"] {
+  --font-color: hsl(228, 12%, 44%);
+  --font-color-secondary: hsl(230, 17%, 14%);
+  --background-color: hsl(0, 0%, 100%);
+  --background-color-secondary: hsl(225, 100%, 98%);
+  --background-image: linear-gradient(
+    var(--background-color),
+    var(--background-color)
+  );
+  --background-repeat: no-repeat;
+  --background-position: 0 450px, 0 0;
+  --card-background: hsl(227, 47%, 96%);
+  --card-hover: hsl(227, 43%, 92%);
+  --font-color-tertiary: hsl(228, 12%, 44%);
+  --link-color: hsl(219, 77%, 44%);
+  --link-hover-color: hsl(219, 80%, 64%);
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+
+.app-background {
+  background-color: var(--background-color-secondary);
+  background-image: linear-gradient(
+    var(--background-color),
+    var(--background-color)
+  );
+  background-repeat: no-repeat;
+  background-position: 0 280px, 0 0;
+}
+
+.app-header {
+  margin-left: 8%;
+  margin-right: 8%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.card {
+  width: 23%;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.large-card {
+  height: 200px;
+}
+
+.card-background {
+  background-color: var(--card-background);
+}
+
+.card-background:hover {
+  background-color: var(--card-hover);
+}
+
+.card-text {
+  color: var(--font-color);
+}
+
+.secondary-font-color {
+  color: var(--font-color-secondary);
+}
+
+.tertiary-font-color {
+  color: var(--font-color-tertiary);
+}
+
+.app-container {
+  display: flex;
+  margin-left: 8%;
+  margin-right: 8%;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  justify-content: space-between;
+  flex-basis: auto;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 501px) and (max-width: 900px) {
+  .app-container {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: auto;
+    flex-wrap: wrap;
+    padding-bottom: 0px;
+  }
+  .card {
+    width: 47%;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .app-header {
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .app-container {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px;
+  }
+  .header-title {
+    font-size: 24px !important;
+  }
+  .app-header {
+    padding-bottom: 10px;
+  }
+  .card {
+    width: 100%;
+  }
+}
+
+.center-vertically {
+  display: flex;
+  align-items: center;
+}
+
+.center-horizontally {
+  justify-content: center;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-right {
+  padding-right: 5px;
+}
+
+.icon-float-right {
+  float: right;
+}
+
+.header-title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 0px;
+}
+
+.header-container {
+  height: 45px;
+  padding-top: 10px;
+}
+
+.total-followers {
+  margin-top: 0px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.dark-mode-label {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.dark-mode-container {
+  height: 35px;
+  padding-bottom: 5px;
+}
+
+.link-color {
+  color: var(--link-color);
+}
+
+.link-color:hover {
+  color: var(--link-hover-color);
+}
+
+.transition {
+  transition: 0.3s;
+}
+
+.top-20 {
+  padding-top: 20px;
+}
+
+.top-15 {
+  padding-top: 15px;
+}
+
+.top-10 {
+  padding-top: 10px;
+}
+
+.bottom-15 {
+  padding-bottom: 15px;
+}
+
+.left-20 {
+  padding-left: 20px;
+}
+
+.right-20 {
+  padding-right: 20px;
+}
+
+.right-10 {
+  padding-right: 10px;
+}

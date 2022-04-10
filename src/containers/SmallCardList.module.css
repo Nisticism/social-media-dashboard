@@ -1,0 +1,13 @@
+@import "../App.css";
+
+.overview-text {
+  color: var(--font-color-tertiary);
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 5px;
+  padding-bottom: 0px;
+}
+
+.small-cards-container {
+  padding-top: 10px;
+}

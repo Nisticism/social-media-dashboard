@@ -1,0 +1,30 @@
+@import "../App.css";
+
+.data-type {
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  color: hsl(228, 34%, 66%);
+}
+
+.increase {
+  color: hsl(163, 72%, 41%);
+}
+
+.decrease {
+  color: hsl(356, 69%, 56%);
+}
+
+.data-value {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--font-color-secondary);
+}
+
+.data-type-text {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.change-text {
+  font-weight: 700;
+}

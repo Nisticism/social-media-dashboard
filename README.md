@@ -1,3 +1,8 @@
+### Intro
+
+Originally a technical assessment for Olla with requirements below, this social media dashboard demonstrates styled React components!
+Feel free to compare this project to the requirements to see how closely the result matches the mockups in the design folder (`src/design`)
+
 ### Objective
 
 Your challenge is to build a responsive Social Media Dashboard and get it looking as close to the design as possible.
